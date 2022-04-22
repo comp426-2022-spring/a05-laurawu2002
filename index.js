@@ -33,6 +33,11 @@ const db = require('./src/services/database.js')
 const morgan = require('morgan')
 const fs = require('fs')
 
+// Add cors dependency
+const cors = require('cors')
+// Set up cors middleware on all endpoints
+app.use(cors())
+
 // Serve static HTML files
 app.use(express.static('./public'));
 // Allow JSON body messages on all endpoints
