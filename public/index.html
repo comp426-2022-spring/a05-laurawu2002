@@ -45,10 +45,33 @@
     </div>
     
     <div id="multi" class="hidden">
-       
+      <h1>Flip many coins</h1>
+			<form id="coins">
+				<label for="number">
+					<strong>How many coins?</strong>
+				</label>
+				<input type="number" name="number" id="number">
+				<input type="submit" value="Flip 'em!">
+			</form>
+
+			<h2>Results</h2>
+				<p id="heads"></p>
+				<p id="tails"></p>
+        <h2>Summary of Flips</h2>
+        <p id = tbl></p>
     </div>
+
     <div id="guess" class="hidden">
-      
+      <h1>Guess the Result!</h1>
+      <button id="guessingHead">Heads</button>
+      <button id="guessingTail">Tails</button>
+
+      <h2>Your Guess: <span id="yourguess"></span></h2>
+      <img class = "smallcoin" src="/assets/img/coin.png" id="guesscoin">
+      <h2>Flip: <span id="flipped"></span></h2>
+      <img class = "smallcoin" src="/assets/img/coin.png" id="flippedcoin">
+      <h2>Your Result: <span id="yourresult"></span></h2>
+
     </div>
 	<script src="main.js"></script>
   </body>
